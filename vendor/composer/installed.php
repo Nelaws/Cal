@@ -149,6 +149,17 @@
             'reference' => '97a34af22bde8d0ac20ab34b29d7bfe360902055',
             'dev_requirement' => false,
         ),
+        'nikic/fast-route' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nikic/fast-route',
+            'aliases' => array(
+                0 => '2.0.x-dev',
+            ),
+            'reference' => 'ea5d3abe8b9fc7d63bb42b0384cb1db60972ff68',
+            'dev_requirement' => false,
+        ),
         'psr/container' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
