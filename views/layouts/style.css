@@ -1,3 +1,30 @@
-#id {
+#navbar {
+    background-color: #020B14;
+}
+#navbar a{
+    color: white; !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#Main_menu {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("Main image.jpg");
+    width: auto;
+    height: 922px;
+}
+
+#Main_menu h2 {
+    font-size: 50px;
+    color: white;
+    background-color: #191919;
+    padding: 10px;
+}
+#Main_menu a{
+    color: white; !important;
+    text-decoration: none;
+    font-size: 40px;
 }

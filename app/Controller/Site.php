@@ -33,7 +33,7 @@ class Site
         }
         //Если удалось аутентифицировать пользователя, то редирект
         if (Auth::attempt($request->all())) {
-            app()->route->redirect('/hello');
+            app()->route->redirect('/');
         }
         //Если аутентификация не удалась, то сообщение об ошибке
         return new View('site.login', ['message' => 'Неправильные логин или пароль']);
@@ -45,10 +45,13 @@ class Site
         app()->route->redirect('/hello');
     }
 
+    public function find(): string{
+        return new View('site.find', ['message' => 'ZZZZZZZZZZZZZZ']);
+    }
 
     public function hello(): string
     {
-        return new View('site.hello', ['message' => 'hello working']);
+        return new View('site.hello', ['message' => 'Поможем найти абонента для вызова']);
     }
 
 }
