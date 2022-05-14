@@ -46,7 +46,12 @@ class Site
     }
 
     public function find(): string{
-        return new View('site.find', ['message' => 'ZZZZZZZZZZZZZZ']);
+        $posts = Post::all();
+        return (new View())->render('site.find', ['posts' => $posts]);
+    }
+    public function add(): string
+    {
+        return new View('site.add', ['message' => 'Пasdsadsadsadsad']);
     }
 
     public function hello(): string

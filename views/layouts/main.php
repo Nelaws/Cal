@@ -13,8 +13,7 @@
 <header>
     <div class="px-3 py-2 border-bottom" id="navbar">
         <div class="d-flex flex-wrap justify-content-center">
-            <a class="text-start col-lg-auto mx-3" href="<?= app()->route->getUrl('/') ?>">Главная</a>
-            <a class="col-lg-auto me-lg-auto" href="#">Добавить абонента</a>
+            <a class="text-start col-lg-auto me-lg-auto mx-3" href="<?= app()->route->getUrl('/') ?>">Главная</a>
             <?php
             if (!app()->auth::check()):
                 ?>
@@ -23,6 +22,7 @@
             <?php
             else:
                 ?>
+                <a class="col-lg-auto me-lg-auto" href="<?= app()->route->getUrl('/add_user') ?>">Добавить абонента</a>
                 <a href="<?= app()->route->getUrl('/logout') ?>">Выход (<?= app()->auth::user()->name ?>)</a>
             <?php
             endif;
