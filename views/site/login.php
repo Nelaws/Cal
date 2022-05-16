@@ -7,7 +7,7 @@
     ?>
     <form method="post">
         <input type="text" name="login" placeholder="login">
-        <input type="text" name="password" placeholder="password">
+        <input type="password" name="password" placeholder="password">
         <button style="background-color: #2D2E2B; color: white; border-radius: 5px;padding: 5px;margin: 5px;">Войти</button>
     </form>
 </div>

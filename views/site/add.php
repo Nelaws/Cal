@@ -1,3 +1,3 @@
 <div id="add">
-    <p>sdsdsssdsdsd</p>
+    <p><?= $message ?? ''; ?></p>
 </div>

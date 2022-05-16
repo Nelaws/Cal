@@ -4,7 +4,7 @@
     <form method="post">
         <input type="text" name="name" placeholder="Name">
         <input type="text" name="login" placeholder="Login">
-        <input type="text" name="password" placeholder="Insert password">
+        <input type="password" name="password" placeholder="Insert password">
         <button style="background-color: #2D2E2B; color: white; border-radius: 5px;padding: 5px;margin: 5px;">Sign in</button>
     </form>
 </div>
