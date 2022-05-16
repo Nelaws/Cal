@@ -7,17 +7,21 @@
             <th>Ф.И.О</th>
             <th>Телефон</th>
             <th>Подразделение</th>
+            <th>Подразделение</th>
             <th>Дата рождения</th>
+            <th>Вид помещения</th>
         </tr>
         </thead>
         <tbody>
         <?php foreach ($posts as $post=>$value): ?>
             <tr>
                 <th><?= $post + 1 ?></th>
-                <th><?= $value->title ?></th>
-                <th><?= $value->text ?></th>
+                <th><?= $value->name ?></th>
+                <th><?= $value->number ?></th>
+                <th><?= $value->unit ?></th>
                 <th><?= $value->unit ?></th>
                 <th><?= $value->birthday ?></th>
+                <th><?= $value->type ?></th>
             </tr>
         <?php endforeach; ?>
         </tbody>
